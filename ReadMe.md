@@ -28,11 +28,6 @@ This is a simple Django-based task management application where users can create
 
 1. **Clone the Repository**
 
-    ```bash
-    git clone https://your-repository-url.git
-    cd your-repository-directory
-    ```
-
 2. **Create and Activate a Virtual Environment**
 
     ```bash
