@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tasks/styles.css' %}">
+</head>
+<body class="body2">
+    <div class="container">
+        <h1>Task List</h1>
+        <div class="button-container">
+            <a href="{% url 'task_create' %}" class="action-button">Create a new task</a>
+            <a href="{% url 'completed_tasks' %}" class="action-button">Completed tasks</a>
+        </div>
+        <ul>
+            {% for task in tasks %}
+                <li>
+                    <div class="container2">
+                    <div class="column">
+                    {{ task.title }}
+                    </div>
+                    <div class="column2">
+                        {% if not task.completed %}
+                            <a href="{% url 'task_complete' task.id %}" class="action-button">Mark as Complete</a>
+                            <a href="{% url 'task_edit' task.id %}" class="action-button">Edit</a>
+                        {% endif %}
+                        <a href="{% url 'task_delete' task.id %}" class="action-button">Delete</a>
+                </div>
+            </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <form method="POST" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit" class="button">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

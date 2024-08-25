@@ -1,0 +1,171 @@
+/* tasks/static/tasks/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.body1 {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.body2 {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+.container1 {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    height: fit-content;
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+a.action-button, button.action-button {
+    background-color:#007bff ; /* Background color for buttons and links */
+    color: white; /* Text color for buttons and links */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Ensures element behaves like a block-level element */
+    text-align: center; /* Center text inside button */
+    padding: 10px 5px; /* Consistent padding for buttons */
+    border-radius: 2px;
+    border: 1px solid #007bff; /* Consistent border */
+    font-size: 10px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between buttons and other elements */
+    width: 100px;
+}
+
+button{
+    background-color:#007bff ; /* Background color for buttons and links */
+    color: white; /* Text color for buttons and links */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Ensures element behaves like a block-level element */
+    text-align: center; /* Center text inside button */
+    padding: 10px 5px; /* Consistent padding for buttons */
+    border-radius: 2px;
+    border: 1px solid #007bff; /* Consistent border */
+    font-size: 10px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between buttons and other elements */
+    width: 110px;
+}
+
+
+a.action-button:hover, button.action-button:hover {
+    background-color: #0056b3; /* Background color on hover */
+    border-color: #0056b3; /* Border color on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center; 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.action-button-container {
+    display: flex;
+    gap: 8px; 
+    justify-content: flex-end; 
+}
+.action-button-container1 {
+    display: flex;
+    gap: 8px; 
+    position: relative;
+    left: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.container2 {
+    display: flex; /* Use flexbox to create a flexible layout */
+    gap: 20px; /* Space between the two columns */
+    width: 100%; /* Make sure the container takes up the full width */
+}
+
+.column {
+    flex: 1; /* Each column will take up equal space */
+    padding: 10px; /* Add some padding inside each column */
+    background-color: #f9f9f9; /* Background color for each column */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
+
+.column2 {
+    flex: 1; /* Each column will take up equal space */
+    padding: 10px; /* Add some padding inside each column */
+    background-color: #f9f9f9; /* Background color for each column */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
+
